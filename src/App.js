@@ -33,7 +33,7 @@ const App = (props) => {
         <div className="content">
         <Navbar handleClick={handleClick}  selected={selected} />
             <Routes>
-                <Route path='/' element={<Card key={title} title={title} data={data} timeframes={timeframes} />} />
+                <Route path='/' element={<Card key={title} data={data} />} />
                 <Route path='/weekly' element={<CardWeekly data={data} />} />
                 <Route path='/monthly' element={<CardMonthly data={data}  />} />
             </Routes>
