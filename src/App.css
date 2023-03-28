@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+}
+.App{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 1050px;
+    margin-top: -1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (max-width: 1245px){
+    .container{
+        margin: 0 !important;
+        max-width: 1040px !important;
+    }
+    .content{
+        margin-top: 1rem;
+        max-width: 1040px !important;
+        min-height: auto !important;
+    }
+    .card-user{
+        margin: 0 !important;
+        width: 320px !important;
+        height: 205px !important;
+    }
+    .card-menu{
+        display: flex !important;
+        width: 320px !important;
+        height: 130px !important;
+    }
+    .card-menu img{
+        width: 70px !important;
+        height: 70px;
+    }
+    .card-menu span{
+        margin-top: 1.5rem !important;
+        margin-left: 6rem !important;
+    }
+    .card-menu h1{
+        font-size: 25px !important;
+        margin-left: 6rem !important;
+        margin-top: 3rem !important;
+    }
+    nav{
+        margin-left: -.5rem !important;
+        margin-bottom: -4.5rem !important;
+    }
+    .list{
+        display: flex !important;
+    }
+    .list li{
+        padding: 1.5rem !important;
+    }
+    .card{
+        width: 325px !important;
+        margin: 1rem 0 -4rem 1rem !important;
+    }
+    .info{
+        width: 320px !important;
+        height: 115px !important;
+        margin-top: 2.5rem !important;
+    }
+    .head{
+        width: 320px !important;
+        height: 60px !important;
+    }
+    .horrair{
+        margin-top: -1rem !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    .horrair h2{
+        font-size: 30px !important;
+    }
+    .horrair span{
+        margin-top: -.7rem !important;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
