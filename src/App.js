@@ -16,7 +16,7 @@ const App = (props) => {
 
     
     useEffect(() => {
-        axios.get("https://guillaumesere.github.io/data.json").then((response) => {
+        axios.get("/data.json").then((response) => {
             setData(response.data);
         })
             .catch(err => {
