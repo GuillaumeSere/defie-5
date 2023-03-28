@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     const getData = () => {
-        axios.get("/data.json").then((response) => {
+        axios.get("./data.json").then((response) => {
             setData(response.data);
         })
             .catch(err => {
