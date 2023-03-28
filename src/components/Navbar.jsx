@@ -34,7 +34,7 @@ const Navbar = () => {
                 <h1>Jeremy Robson</h1>
                 <nav>
                     <ul className='list'>
-                        <Link to='/'>
+                        <Link to='/daily'>
                             <li
                                 className={selected === 'daily' ? 'active' : ''}
                                 onClick={() => handleClick('daily')}
