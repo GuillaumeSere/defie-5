@@ -15,7 +15,7 @@ const CardWeekly = () => {
     const [selected, setSelected] = useState("daily");
 
     useEffect(() => {
-        axios.get("/data.json").then((response) => {
+        axios.get("https://guillaumesere.github.io/data.json").then((response) => {
             setData(response.data);
         })
             .catch(err => {
