@@ -27,11 +27,11 @@ const Navbar = () => {
     }, [selected])
 
     return (
-        <div className='card-user'>
-            <div className="card-menu">
-                <img src={avatar} alt="avatar" />
-                <span>Report for</span>
-                <h1>Jeremy Robson</h1>
+        <div className='card-user' aria-label='card'>
+            <div className="card-menu" aria-label='menu'>
+                <img src={avatar} alt="avatar" aria-label='avatar' />
+                <span aria-label='presentation'>Report for</span>
+                <h1 aria-label='name'>Jeremy Robson</h1>
                 <nav>
                     <div className='list'>
                         <Link to='/'>
