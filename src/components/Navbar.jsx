@@ -33,29 +33,29 @@ const Navbar = () => {
                 <span>Report for</span>
                 <h1>Jeremy Robson</h1>
                 <nav>
-                    <ul className='list'>
+                    <div className='list'>
                         <Link to='/'>
-                            <li
+                            <div
                                 className={selected === 'daily' ? 'active' : ''}
                                 onClick={() => handleClick('daily')}
-                            >Daily</li>
+                            >Daily</div>
                         </Link>
 
                         <Link to='/weekly'>
-                            <li
+                            <div
                                 className={selected === 'weekly' ? 'active' : ''}
                                 onClick={() => handleClick('weekly')}
-                            >Weekly</li>
+                            >Weekly</div>
                         </Link>
 
                         <Link to='/monthly'>
-                            <li
+                            <div
                                 className={selected === 'monthly' ? 'active' : ''}
                                 onClick={() => handleClick('monthly')}
-                            >Monthly</li>
+                            >Monthly</div>
                         </Link>
 
-                    </ul>
+                    </div>
                 </nav>
             </div>
         </div>

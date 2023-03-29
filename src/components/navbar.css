@@ -43,14 +43,17 @@ nav{
     margin-bottom: -9.5rem;
     margin-left: .5rem;
 }
-.list li{
+.list div{
     list-style: none;
     color:hsl(236, 100%, 87%);
     font-size: 18px;
     padding: .7rem;
     cursor: pointer;
 }
-.list li:hover{
+.list a{
+    text-decoration: none;
+}
+.list div:hover{
     color: white;
 }
 
